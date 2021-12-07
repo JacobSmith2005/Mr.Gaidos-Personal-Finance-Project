@@ -8,7 +8,7 @@ body {
 }
 
 .flex {
-  background: #fdfdfd;
+  background: #3C33FF;
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -53,7 +53,7 @@ input {
 
 button {
     color: white;
-    background: #508abc;
+    background: #3C33FF;
     border: solid 1px;
     border-color: rgba(0, 0, 0, .1);
     cursor: pointer;
@@ -65,4 +65,8 @@ label {
 
 #btnDeposit, #btnWithdraw {
     width: 8em;
+}
+.button1 {
+  background-color: #008CBA;
+  border-radius: 50%;
 }
