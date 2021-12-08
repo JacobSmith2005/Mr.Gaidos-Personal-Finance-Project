@@ -1,40 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" dir="donos">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Student Login</title>
-  <style>
-    h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 3px solid #f1f1f1;
+    }
+ input[type=text], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: lightblue;
+    }
 </style>
 
-<body style="background: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
-            background-repeat: no-repeat;
-            background-size: cover">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-  </head>
-
-  <body>
-
-    <body>
-      <h1>Student login</h1>
-      <div>
-        <div>
-          <form action="/Comments" method="post">
-            <input class="feedbackform" type="text" name="user" placeholder="Enter User name" value="">
-            <div class="commentspacing">
-              <input class="feedbackform" type="password" name="pass" placeholder="Enter password" value="">
-            </div>
-            <div class="commentspacing">
-              <input type="button" onclick="location.href='http://localhost:5000/?';" value="Cancel" />
-              <input type="button" onclick="location.href='http://localhost:5000/studentaccess?';" value="Enter" />
-            </div>
-          </form>
+</head>
+<body>
+    <center> <h1> Student Login Form </h1> </center>
+    <form>
+        <div class="container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="button" onclick="location.href='http://localhost:5000/student?';" value="login" />
+            <input type="button" onclick="location.href='http://localhost:5000/?';" value="Cancel" />
+            <input type="checkbox" checked="checked"> Remember me
+            <a href="/forgotpass"> Forgot password? </a>
         </div>
-      </div>
-    </body>
+    </form>
+</body>
 
+<!--<body style="background: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+            background-repeat: no-repeat;
+            background-size: cover">-->
+</html>
 </html>
