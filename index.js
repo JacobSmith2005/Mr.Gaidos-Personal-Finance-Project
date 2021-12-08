@@ -19,6 +19,10 @@ router.use(express.urlencoded({
 
 app.use(express.static('public'))
 
+app.get('/page', function(req, res) {
+  res.render('pages/page')
+});
+
 app.get('/teacher', function(req, res) {
   res.render('pages/teacheraccess')
 });
