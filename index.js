@@ -23,7 +23,7 @@ app.get('/page', function(req, res) {
   res.render('pages/page')
 });
 
-app.get('/teacher', function(req, res) {
+app.get('/teacheraccess', function(req, res) {
   res.render('pages/teacheraccess')
 });
 
